@@ -8,9 +8,11 @@
         margin: 40px;
         background-color: #f4f4f4;
     }
+
     h1, h2 {
         color: #333;
     }
+
     section {
         background: white;
         padding: 20px;
@@ -18,9 +20,11 @@
         border-radius: 8px;
         box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
     }
+
     a {
         text-decoration: none;
     }
+
     .button {
         display: inline-block;
         padding: 10px 15px;
@@ -29,9 +33,48 @@
         border-radius: 5px;
         margin-top: 10px;
     }
+
     .button:hover {
         background-color: #004a99;
     }
+
+    /* GRID FOR EXPERIENCE */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        background: #fafafa;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+    }
+
+    /* SKILLS */
+    .skills-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .skill {
+        background: #e6f0ff;
+        padding: 8px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
 </style>
 </head>
 
@@ -45,7 +88,7 @@
 <h3>About Me</h3>
 <p>
 My name is Emilio Jaramillo and I am a Computer Science major graduating in May of 2026. A little more about me I'm a Chicago native with a strong background in music. 
-I started playing guitar at the age of eight and eventually performed in a local Mexican regional band.This experience has shaped my creativity and also a curiosity for music gear and recording technology. 
+I started playing guitar at the age of eight and eventually performed in a local Mexican regional band. This experience has shaped my creativity and also a curiosity for music gear and recording technology. 
 In high school, discovering computer science allowed me to blend my passion for music with programming and product development. My experience as both a musician and a consumer of music products has given 
 me valuable insights into user needs, which I aim to apply throughout my career in tech. Learning how to program has given me the ability to understand the digital tools I use in music. This has fueled 
 a passion for computer science and has inspired me to develop tools for the world to use.
@@ -68,27 +111,49 @@ download Resume .pdf
 <section>
 <h3>Relevant Experience</h3>
 
-<p><strong>Relational/Dbase/Theo/Design.</strong><br>
+<div class="grid">
+
+<div class="card">
+<strong>Relational/Dbase/Theo/Design.</strong><br>
 Chicago, IL, 2025 (Aug-Dec.)<br>
-Database Project</p>
-<p>
-Responsible for designing and implementing a database, including ER diagram and relational schema development. Defined tables and relationships using SQL, as well as data entry and created queries to test the database.
-</p>
+<br>
+Designed and implemented a database including ER diagrams and relational schema. Defined tables and relationships using SQL, performed data entry, and created queries to test the database.
+</div>
 
-<p><strong>Software Engineering.</strong><br>
+<div class="card">
+<strong>Software Engineering</strong><br>
 Chicago, IL, 2026 (Feb-May.)<br>
-Fullstack Project</p>
-<p>
-Built a full-stack fashion web app in a team of 5. Responsible for establishing database routes, integrating dynamic item listings and like functionality, implementing Stripe checkout, and deploying the application on AWS EC2.
-(Node.js, Express, MySQL, Stripe API, HTML/CSS/JS, AWS EC2, PM2, Nginx)
-</p>
+<br>
+Built a full-stack fashion web app in a team of 5. Developed database routes, dynamic item listings, like functionality, Stripe checkout, and deployed on AWS EC2.
+<br><br>
+<em>Tech:</em> Node.js, Express, MySQL, Stripe API, HTML/CSS/JS, AWS EC2, PM2, Nginx
+</div>
 
-<p><strong>Intro to Generative AI.</strong><br>
+<div class="card">
+<strong>Intro to Generative AI</strong><br>
 Chicago, IL, 2026 (Feb-May.)<br>
-GenAI Solutions Project</p>
-<p>
-Designed and implemented a semantic search system for podcast transcripts using embedding models and FAISS indexing. Developed a retrieval pipeline to return relevant episodes and integrated an abstractive summarization model to generate episode overviews. Built an interactive UI using Gradio to allow users to query and explore results efficiently. Evaluated system performance using Precision@K and ROUGE metrics to assess retrieval accuracy and summary quality.
-</p>
+<br>
+Built a semantic search system for podcast transcripts using embeddings and FAISS. Implemented retrieval + summarization pipeline and interactive UI with Gradio.
+<br><br>
+Evaluated using Precision@K and ROUGE metrics.
+</div>
+
+</div>
+
+</section>
+
+<section>
+<h3>Skills</h3>
+
+<div class="skills-list">
+<div class="skill">JavaScript / Node.js</div>
+<div class="skill">SQL / MySQL</div>
+<div class="skill">HTML / CSS / XML</div>
+<div class="skill">PHP</div>
+<div class="skill">Web Design</div>
+<div class="skill">Time Management</div>
+<div class="skill">Flexibility / Reliability</div>
+</div>
 
 </section>
 
